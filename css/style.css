@@ -1,0 +1,160 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* COMMON CSS START */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+.container{
+    width: 1270px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+/* COMMON CSS END */
+.heading{
+    font-size: 32px;
+    color: black;
+    text-align: center;
+}
+.heading span{
+    color: red;
+}
+section{
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.faq{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #888;
+}
+.faqHeader{
+    padding: 15px;
+    border-bottom: 1px solid #888;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.faqHeader span{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+.faq.active .faqHeader span{
+    transform: rotate(0deg);
+}
+.faqContent{
+    padding: 10px; 
+    line-height: 28px;
+    text-align: justify;
+}
+.faqBody{
+    max-height: 0;
+    overflow: hidden;
+}
+.faq.active .faqBody{
+    max-height: 100vh;
+    overflow: auto;
+}
+#photoConeter img{
+    max-width: 250px;
+    margin: 0 15px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+}
+.photoGelary{
+    position: fixed;
+    inset: 0;
+    background-color: #000000b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.photoGelary.active{
+    opacity: 1;
+    visibility: visible;
+}
+.photoGelary img{
+    max-width: 30%;
+    display: block;
+}
+.cancleBtn{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: 0.3s;
+}
+.cancleBtn:hover{
+    width: 50px;
+    height: 50px;
+    animation: alternate;
+    font-size: 30px;
+}
+.rightArrow{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 40px ;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-family: 800;
+}
+.leftArrow{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 40px ; 
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-family: 800;
+}
+.headingTwo{
+    font-size: 32px;
+    color: black;
+    text-align: center; 
+}
+.headingTwo span{
+    color: red;
+}
